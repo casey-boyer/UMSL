@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProjectOne</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="score">score</string>
+    <string name="placeholder_repeat">placeholder_repeat</string>
+    <string name="red_text"></string>
+    <string name="yellow_text"></string>
+    <string name="blue_text"></string>
+    <string name="green_text"></string>
+    <string name="highscore">HighScore</string>
+    <string name="timer_text">timer</string>
+
+</resources>
