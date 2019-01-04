@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    tools:context="edu.umsl.stopwatch.MainViewFragment">
+
+    <TextView
+        android:id="@+id/stopWatchClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/timer_text"
+        android:textSize="40sp">
+    </TextView>
+
+    <Button
+        android:id="@+id/startButton"
+        android:background="@drawable/round_button_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_alignEnd="@id/startButton"
+        android:layout_below="@+id/stopWatchClock"
+        android:text="@string/start_button_text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="@font/quicksand_bold"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:visibility="invisible"
+        android:background="@drawable/round_button_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_alignEnd="@id/stopButton"
+        android:layout_below="@+id/stopWatchClock"
+        android:text="@string/stop_button_text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="@font/quicksand_bold"/>
+
+    <Button
+        android:id="@+id/lapButton"
+        android:background="@drawable/round_button_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@+id/stopWatchClock"
+        android:text="@string/lap_button_text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="@font/quicksand_bold"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:visibility="invisible"
+        android:background="@drawable/round_button_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_gravity="end"
+        android:layout_below="@+id/stopWatchClock"
+        android:text="@string/reset_button_text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="@font/quicksand_bold"/>
+
+</RelativeLayout>
