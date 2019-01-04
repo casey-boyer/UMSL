@@ -1,0 +1,19 @@
+void
+let x = 0
+begin
+  let w = 0
+  read ( w ) :
+  read ( x ) :
+  begin
+    let x = 0
+    read ( x ) :
+    begin
+      let x = 0
+      read ( x ) :
+      print ( x ) :
+    end
+    print ( x ):
+  end
+  print ( x ):
+  print ( w ):
+end

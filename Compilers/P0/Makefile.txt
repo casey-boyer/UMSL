@@ -1,0 +1,14 @@
+CC=g++
+CFLAGS=-I.
+DEPS = node.h tree.h traversals.h
+OBJ = main.o tree.o traversals.o
+TARGET = P0
+
+%.o: %.cpp $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+$(TARGET): $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+clean:
+	rm -f *.o *.inorder *.postorder *.preorder P0

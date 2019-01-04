@@ -1,0 +1,7 @@
+void
+let x = 0
+begin
+  read ( x ) :
+  cond ( x = = 1 - 1 )
+    print ( - x ) :
+end

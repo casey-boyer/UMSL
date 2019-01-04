@@ -1,0 +1,17 @@
+Use OpenCV to create an 8-bit single-channel image of size 640x480 pixels.  
+In this image, at random locations, place a square of size 100x100 pixels, a rectangle of size 200x160 pixels, and a circle of diameter 70 pixels.  
+Your background should be black.  For each object, the center pixel of the object will be black.  
+Other pixels will be given a grayscale value as d where d is the distance of the pixel from the object center (maximized at 255).  
+Make sure that you crop the objects at the borders.  If two objects overlap, the object being drawn late takes precedence.  
+Call your executable objects.  Make sure you display the image on screen.
+
+Handin a copy of the source and Makefile on hoare.  Create your program in a directory called username.1 where username is your login name on hoare.  
+Once you are done with everything, remove the executables and object files, and issue the following commands:
+
+cd
+
+chmod 755 ~
+
+~sanjiv/bin/handin cs5420 1
+
+chmod 700 ~

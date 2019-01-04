@@ -1,0 +1,14 @@
+CC=g++
+CFLAGS=-I.
+DEPS = token.h testScanner.h scanner.h
+OBJ = main.o token.o testScanner.o scanner.o
+TARGET = scanner
+
+%.o: %.cpp $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+$(TARGET): $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+clean:
+	rm -f *.o P1

@@ -1,0 +1,7 @@
+Should not put working code in a header file. I kept looking for the function till I happened to look into utilities.h. 
+1. Did not take difference of corresponding pixels. It is not enough to take distance between average intensities. (15/25) 
+2. OK (25/25) 
+3. OK (25/25) 
+4. OK (25/25) 
+5. OK (25/25) 
+6. Operations not in-place. (15/25) 

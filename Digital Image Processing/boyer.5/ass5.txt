@@ -1,0 +1,9 @@
+Write a frequency-domain filter to remove periodic noise from the picture delmar:~bhatias/pix/noisy_backyard.jpg.  
+You can use OpenCV Fourier transform.  
+
+For an example, check link here: http://docs.opencv.org/doc/tutorials/core/discrete_fourier_transform/discrete_fourier_transform.html
+
+
+I'll like to see a visualization of your Fourier-transformed image.
+
+Submit the code as assignment 5 on hoare using instructions from the previous assignments.

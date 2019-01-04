@@ -1,0 +1,8 @@
+void
+let x = 0
+begin
+  read ( x ):
+  cond ( x > = 1 )
+    cond ( x < = 10 )
+      print ( x ) :
+end

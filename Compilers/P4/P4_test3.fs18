@@ -1,0 +1,6 @@
+void
+let x = 1
+begin
+  read ( x ) :
+  print ( x ) :
+end

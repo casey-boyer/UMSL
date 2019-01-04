@@ -1,0 +1,3 @@
+I asked for the center pixel to be black. Your rendering is not correct. 
+
+40/50

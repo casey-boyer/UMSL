@@ -1,0 +1,41 @@
+CS5420-G01: Digital Image Processing
+Casey Boyer
+Assignment #5, Due 11/28/2018
+
+Getting executable:
+	-You make invoke 'make' or 'make ass5' to get the exectuable.
+
+Invocation:
+	-'./ass5' will remove the periodic noise from the noisy_backyard.jpg
+	  image in this directory.
+
+NOTES:
+ 	-The functions used are defined in utilities.cpp, and prototyped
+	 in utilities.h.
+
+	-I attempted to remove the periodic noise in the frequency domain
+	 by finding the regions in the spectrum with abrupt changes. This
+	 was done using the setMouseCallback() function provided by
+	 openCv, and selecting these areas as rectangles.
+
+	-After obtaining these areas to remove the frequency, I assigned
+	 the value 0 to both the real and imaginary parts of the
+	 fourier transformed image in these areas. The program will
+	 display the spectrum after noise removal, and this will show
+	 where I removed the frequency.
+
+	-The output image, that is, the fourier transformed image with
+	 periodic noise removed and then transformed back into spatial domain,
+	 appears to be incorrect. It is visibly brighter, and I am not
+	 sure that I performed noise removal correctly, as the horizontal
+	 and vertical lines are still present across the image.
+	 This may have to do with how I transformed the image back
+	 into spatial domain; after modifying the real and imaginary
+	 parts of the image to remove noise, I merged these images
+	 back into the fourier transformed image, and then calculated
+	 the inverse DFT to obtain the real part of the image in
+	 spatial domain. I think I may be missing a step here. 
+	 However, I did test to make sure that I could transform
+	 the noisy_backyard image to frequency domain and back to spatial
+	 domain, and I was able to do so without any problems.
+

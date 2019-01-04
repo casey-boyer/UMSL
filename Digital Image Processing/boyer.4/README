@@ -1,0 +1,63 @@
+Casey Boyer
+CS4420: Introduction to Digital Image Processing
+Assignment #4, Due 11/14/2018
+
+Functions that are used often are prototyped in utilities.h, and
+defined in utilities.cpp.
+
+Getting executables:
+	-The names of each .cpp file correspond to the problem
+	 number in the assignment. For example, 'P1.cpp' corresponds
+	 to problem #1 in the assignment.
+
+	-To build all executables, invoke 'make'.
+
+	-To build the exectuable for problem #1, invoke 'make add_rm_noise'.
+
+	-To build the executable for problem #2, invoke 'make zoom'.
+
+	-To build the executable for probelm #3, invoke 'make sm_filter'.
+
+	-To build the executable for problem #4, invok 'make blur'.
+
+	-To build the executable for problem #5, invoke 'make P5'.
+
+	-To build the executable for problem #6, invoke 'make P6'.
+
+Invocation:
+	-For program P1, an image and percentage is expected
+	 as arguments on the command line. The proper invocation
+	 for P1 is: './add_rm_noise [image] n' where [image] is the image
+	 file and n is the percentage.
+	 For example: './add_rm_noise astronaut.jpg 10' specifies the image
+	 as astronaut.jpg and the percentage of bits to be flipped as 10%.
+
+	-For program P2, the zoom factor, center of the zoom, and width and
+	 height of the zoom, and the input image and output image are expected
+	 as arguments as follows:
+	 './zoom -z 5 -R 200 -C 300 -H 100 -W 100 astronaut.jpg out.jpg'
+	 where the zoom factor is 5, the center of the zoom is (200, 300),
+	 the width and height of the zoom is 100 x 100, the input image
+	 is astronaut.jpg, and the output image's name is out.jpg.
+	 The command line arguments are retrieved using getopt().
+
+	-For program P3, the executable is called './sm_filter', and an
+	 image must be provided as a command line argument.
+	 Ex: './sm_filter astronaut.jpg'
+
+	-For program P4, (executable called 'blur'), the image, kernel size,
+	 and resolution are expected as parameters on the command
+	 line as follows:
+	 './blur astronaut.jpg 4 10' will apply the kernel of size 4 with
+	 resolution 2^10 to the image astronaut.jpg.
+
+	-For program P5, the executable is called './P5' and an
+	 image must be provided as a command line argument.
+	 Ex. './P5 astronaut.jpg'
+
+	-For program P6, the structuring element is defined in the file
+	 'se.txt'. You may manipulate the values as needed here. To
+	  invoke P6:
+	  './P6 astronaut.jpg' will perform erosion and dilation on the
+	  binary image version of astronaut.jpg, and will do so using
+	  the structuring element defined in se.txt.
