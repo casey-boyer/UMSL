@@ -1,0 +1,42 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: Tahoma, "Arial Black";
+}
+
+.description {
+    color: #a3a3a3;
+    font-size: 18px;
+}
+
+.title {
+    color: #000;
+    font-size: 30px;
+}
+
+.item {
+    color: #000;
+    font-size: 1em;
+}
+
+.itemsList {
+    border-bottom: solid 3px #000;
+    margin: 1em 2em; /*10 pixel top and bottom margin, 20 pixel left and right margin*/
+}
+
+/*Styling the glyphicon p elements*/
+p.btn, p.btn-info, p.btn-lg {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}

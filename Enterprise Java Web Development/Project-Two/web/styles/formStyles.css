@@ -1,0 +1,39 @@
+/*Attribute-selector definitions, psuedo-classes*/
+input[type=text], input[type=password] {
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+    display: inline-block;
+}
+
+/*Class style definitions*/
+.hideElement {
+    display: none;
+}
+
+.showElement {
+    display: inline-block;
+}
+
+.inputErrorMsg {
+    color: #e96367;
+}
+
+.inputError {
+    box-shadow: 0 0 5px #d42126;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #e96367;
+}
+
+#errorMessage404 {
+    font-size: 5em;
+    color: #d42126;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+body {
+    font-family: sans-serif;
+}

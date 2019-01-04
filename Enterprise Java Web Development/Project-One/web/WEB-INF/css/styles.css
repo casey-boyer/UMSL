@@ -1,0 +1,258 @@
+/*Styles for html tag elements:*/
+/*------------------------------*/
+/*Style for all html elements in the body tag. The font-family is selected from
+the availability of Verdana, Arial, or a sans-serif font. The color of the text is black,
+and the font-size is medium.*/
+body {
+    font-family: Verdana, Arial, sans-serif;
+    color: #000;
+    font-size: medium;
+}
+
+/*Style for all input type="text" elements.*/
+input[type=text] {
+    padding: 12px 20px; /*Top & bottom padding is 12px, right & left padding is 20px*/
+    margin: 8px 80px; /*Top & bottom margin is 8px, right & left padding is 80px*/
+    border: 4px solid #ccc; /*Top, bottom, left & right border: 4px width, solid, light-gray color*/
+    border-radius: 4px; /*Top, bottom, left & right border-radius: 4px width*/
+    width: 200px; /*Width is 200px*/
+    height: 45px; /*Height is 45px*/
+    text-align: left; /*Align text left*/
+}
+
+/*Style for all input type="checkbox" elements*/
+input[type="checkbox"] {
+    margin: 4px 43px; /*Top and bottom margin is 4px, right & left margin is 43px*/
+}
+
+/*Style for all input type="submit" elements*/
+input[type=submit] {
+    background-color: #bdbdbd; /*Light gray background color*/
+    color: #fff; /*White colored text*/
+    margin: 20px; /*Top, bottom, left & right margins: 20px*/
+    padding: 15px 32px; /*Top and bottom padding: 15px; Right and left padding: 32px;*/
+    text-align: center; /*Align text center*/
+    font-size: large; /*Large font size*/
+    border: 2px solid #828282; /*Top, bottom, left & right border: 2px width, solid, medium-gray color*/
+    border-radius: 4px; /*Top, bottom, left & right border radius: 4px*/
+}
+
+/*Style for all input type="text" elements in focus*/
+input[type=text]:focus {
+    /*Top, bottom, left & right border: 3px width, solid, dark gray color*/
+    border: 3px solid #555;
+}
+
+/*Class definitions*/
+/*---------------------*/
+
+/*Style for titles class; used on elements that act as a title for something*/
+.titles {
+    font-size: large; /*Large font size*/
+    font-weight: bolder; /*Extra bolded font*/
+    padding: 10px 12px; /*Top and bottom padding: 10px; Right and left padding: 12px;*/
+    text-align: left; /*Align text left*/
+}
+
+/*Style for labels class; used on all <label> elements*/
+.labels {
+    margin: 0 12px; /*No top and bottom margin; Right and left margin: 12px*/
+    text-align: left; /*Align text left*/
+    font-weight: bold; /*Regular bold font*/
+}
+
+/*Style for all elements with class 'values'; usually is submitted user input*/
+.values {
+    font-size: x-large; /*Extra large font size*/
+    font-family: Courier New; /*Courier new font*/
+}
+
+/*Style for all elements with courseItem class; this is an individual course in the schedule display*/
+.courseItem {
+    border: 2px solid #9c9c9c; /*Top, bottom, left and right border: 2px width, solid, medium-gray*/
+    background-color: #dedede; /*Light gray background color*/
+    font-size: 14px; /*Smaller font size*/
+    text-align: center; /*Align text to top center of element*/
+}
+
+/*Used to easily generate a 'calendar' like UI for the schedule. From W3-schools 'CSS grid' guide.
+https://www.w3schools.com/css/css_grid.asp*/
+.grid-container {
+    display: inline-grid; /*This will allow the grid to be resized as the window width changes.*/
+    grid-template-columns: auto auto auto auto auto; /*5 columns, one for each day of the (business) week*/
+    background-color: #000; /*Black background color of the entire grid*/
+    padding: 10px; /*Top, bottom, left and right padding: 10px*/
+    margin-left: 20%; /*Left margin is 20% of the page*/
+}
+
+/*Style for elements with grid-item class; this is for each column in the schedule display*/
+.grid-item {
+    background-color: #ededed; /*Light gray background color*/
+    border: 1px solid #000; /*Top, bottom, left & right border: 1px width, solid, black*/
+    padding: 20px; /*Top, bottom, left & right padding: 20px*/
+    font-size: 10px; /*Small font size*/
+    text-align: center; /*Align text to top center of column*/
+}
+
+/*Style for elements with errorMessage class; used to display errors returned from the server,
+or errors returned from javascript functions when validating input*/
+.errorMessage {
+    color: #c4251c; /*Red colored text*/
+    font-weight: bold; /*Regular bold weight*/
+    font-size: small; /*Small font*/
+    padding-left: 12px; /*Top, bottom, left & right padding: 12px*/
+}
+
+/*Style for elements with class 'conflictCourse'; used to display two conflicting courses when
+attempting to add a course that has a time overlap with another course*/
+.conflictCourse {
+    padding-left: 30px; /*Top, bottom, left & right padding: 30px*/
+    font-size: medium; /*Medium font size*/
+}
+
+/*Style for elements with class 'hidden'; used to hide errorMessages when they are not
+applicable to user input. This does not eliminate the physical space an error message may use
+on a page, however (that would be display: none;).*/
+.hidden {
+    visibility: hidden;
+}
+
+
+/*ID styles*/
+/*---------------------*/
+
+/*Used to style the table for selecting the days a course will occur on.*/
+#daysCheckboxTable {
+    border-collapse: collapse; /*No border in the table*/
+}
+
+
+/*Combination styles*/
+/*-------------------------*/
+
+/*Used to display an error at the top of the schedule.jsp page, when the user
+submits their schedule before adding any courses.*/
+#scheduleError.errorMessage {
+    text-align: center; /*Align text to center of page*/
+    font-size: large; /*Large font size*/
+}
+
+/*Used to style each <p> element with the class 'titles', that is a child of the
+<div> element with the id 'scheduleCalendar'. This will style the 'Monday',
+'Tuesday', etc titles in the columns on the schedule display.*/
+#scheduleCalendar p.titles {
+    text-align: center; /*Align text to center of element*/
+    border-bottom: solid 4px; /*4px width solid bottom border*/
+    margin: 0; /*No margin at all*/
+}
+
+/*Used to style the <div> element with the 'studentInfoRow' id on the confirm.jsp
+page.*/
+div#studentInfoRow {
+    text-align: center; /*Align text to center*/
+}
+
+/*Styles for specific window widths, i.e. tablet and mobile*/
+/*-----------------------------------------------------------*/
+
+/*The following styles apply to a window width smaller or equal to 576px, which
+is mobile according to W3Schools.*/
+@media only screen and (max-width: 576px) {
+    /*Make the grid-container, the div element parent of the entire schedule grid, display
+    each column as far as the window width will allow, and then stack each column on top
+    of each other, so the column width does not span further across the page than
+    the page's width.*/
+    .grid-container {
+        grid-template-columns: max-content;
+    }
+
+    /*Adjust the margins for the start and end time input for the course,
+    so that the select input for AM or PM appears beside the input textbox in
+    mobile.*/
+    #startCourseTime, #endCourseTime {
+        margin: 8px 10px; /*Top and bottom margin: 8px; Right and left margin: 10px;*/
+    }
+
+    /*Adjust the margin of each checkbox input in the daysCheckboxTable table, so that
+    they appear alongside the <th> elements*/
+    #daysCheckboxTable input[type="checkbox"] {
+        margin: 4px 65px; /*Top and bottom margin: 4px; Right and left margin: 65px;*/
+    }
+
+    /*Display each element of the daysCheckboxTable, including the table element itself,
+    as a block so that it forces each child element (th, tr, td) on a new line. This prevents
+    the table from spanning across the page, with a width greater than the window width.*/
+    #daysCheckboxTable table, #daysCheckboxTable th, #daysCheckboxTable tr,
+    #daysCheckboxTable td {
+        display: block;
+    }
+
+    /*'Hide' the contents of the daysCheckboxTable <th> elements.*/
+    #daysCheckboxTable th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /*Force the daysCheckboxTable <td> elements to behave like a row, so each
+    checkbox appears on its own line*/
+    #daysCheckboxTable td {
+        border: none; /*No border*/
+        position: relative; /*Relative to its normal position*/
+        padding-left: 50%; /*50% relative to its normal position*/
+    }
+
+    /*For each element before the daysCheckboxTable <td> elements, position such
+    like a table header*/
+    #daysCheckboxTable td:before {
+        position: absolute;
+        top: 6px; /*6px from top*/
+        left: 6px; /*6px from left*/
+        width: 45%; /*45% of normal width*/
+        padding-right: 10px; /*Right padding 10px*/
+        white-space: nowrap; /*Do not allow text to wrap to the next line*/
+    }
+
+    /*Insert content before each td to mimic the <th> elements.*/
+
+    #daysCheckboxTable td:nth-of-type(1):before {
+        content: "Monday:"; /*Monday column*/
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #daysCheckboxTable td:nth-of-type(2):before {
+        content: "Tuesday:"; /*Tuesday column*/
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #daysCheckboxTable td:nth-of-type(3):before {
+        content: "Wednesday:"; /*Wednesday column*/
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #daysCheckboxTable td:nth-of-type(4):before {
+        content: "Thursday:"; /*Thursday column*/
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #daysCheckboxTable td:nth-of-type(5):before {
+        content: "Friday:"; /*Friday column*/
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+/*Style for tablet*/
+@media only screen and (max-width: 768px) {
+    /*Make the grid-container, the div element parent of the entire schedule grid, display
+    each column as far as the window width will allow, and then stack each column on top
+    of each other, so the column width does not span further across the page than
+    the page's width.*/
+    .grid-container {
+        grid-template-columns: max-content;
+    }
+}

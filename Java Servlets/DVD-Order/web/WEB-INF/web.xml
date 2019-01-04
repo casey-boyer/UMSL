@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<!--This servlet tag specifies the servlet name, CartServlet, and the class
+         it belongs to, which is cart.CartServlet, where cart is the package.
+         Then, the servlet-mapping tag maps the CartServlet servlet to the 
+         url-pattern /order, and since the action attribute of the
+         form element on both the index.html and thanks.jsp pages is
+         "order", this sends the form data to the servlet upon form
+         submission. 
+         The session-config tag indicates that the current user session will 
+         expire within 30 minutes.
+         The welcome-file-list tag specifies that index.jsp, cart.jsp, 
+         checkout.jsp, signIn.jsp, and register.jsp are welcome-files.
+         The error-page tag lists an exception-type, which is
+         java.lang.Throwable, and the location to handle this exception,
+         which is /errorJava.jsp. This handles all errors that may be
+         thrown by the servlet.
+         Additionally, another error-page tag specifies the location
+         for a 404 error, and the location is error404.jsp.
+         -->
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>cart.CartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>cart.jsp</welcome-file>
+        <welcome-file>checkout.jsp</welcome-file>
+        <welcome-file>signIn.jsp</welcome-file>
+        <welcome-file>register.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/errorJava.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+</web-app>

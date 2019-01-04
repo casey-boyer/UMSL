@@ -1,0 +1,107 @@
+/*This is the style for the p element that displays
+"Sign In" and has the id "pageTitle". The font-family
+indicates that courier, helvetica, or verdana will be chosen
+depending on browser support, and if no browser supports
+these fonts, then a simple sans-serif font will be used.
+The font-size is large, so the title stands out.
+The font-weight is 900, which bolds the text.
+The text-indent is 50px, which indents the text slightly
+from the left of the page.
+The color is a hex code which displays the font's color.*/
+#pageTitle {
+    font-family: Courier, Helvetica, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+    text-indent: 50px;
+    color: #6460f0;
+}
+
+.pageHeader {
+    background-color: #b6ecfb; /*Light blue background*/
+    padding: 20px; /*Add 20 pixels of padding to the top, bottom, right & left*/
+    border-radius: 25px; /*Round the border edges*/
+}
+
+/*This styling applies to all elements with the class attribute equal to
+"pageLabels", which are the email and password labels. The font-family
+indicates that courier, helvetica, or verdana will be chosen depending
+on browser support, and if no browser supports these fonts, then a simple
+sans-serif font will be used.
+The font-size is medium, so the labels stand out but are not large in
+comparison to the p element with the pageTitle id.
+The width is 7em, so all the labels are aligned with each other.
+The float: left rule make the labels float to the left of the page,
+so the input boxes next to them float right. The color is the text color,
+which is the same color as all text on the page.*/
+.pageLabels {
+    font-family: Courier, Helvetica, Verdana, sans-serif;
+    font-size: medium;
+    width: 7em;
+    float: left;
+    color: #6460f0;
+}
+
+/*This styling applies to all elements with the class attribute equal to
+"inputBoxes", which are the input boxes for the customer's email and password.
+The border-radius is 5px, which rounds the borders of the input box slightly.
+The width is 15em, so the input boxes are slightly longer than default.
+The bottom margin is 10px, so the input boxes have spacing
+between them and are not close together.*/
+.inputBoxes {
+    border-radius: 5px;
+    width: 15em;
+    margin-bottom: 10px;
+}
+
+/*This is the styling for the submit button (which uses its id to style it).
+The background-color specifies the color of the button.
+The font-size is 15px, which is the size of the "Submit" text on the button.
+The font-weight is bold so it stands out.
+The color rule applies to the color of the "Submit" text, which is the same
+color as the text on the entire page.
+The font-family indicates the browser will choose courier, helvetica, or verdana
+depending on browser support, or will choose a simple sans-serif font.
+The border-radius rounds the edges of the button slightly.
+The float: left aligns the button the left of the page.
+The margin-top is 10px, which spaces it from the labels and input boxes slightly.*/
+#submitButton {
+    background-color: #a4f9f7;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6460f0;
+    font-family: Courier, Helvetica, Verdana, sans-serif;
+    border-radius: 4px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*This styling rule applies to the input boxes with the required attribute.
+Whenever the input box contains invalid input, according to the pattern
+specified on the input box element, the background color of the input box
+is highlighted a light red.*/
+input:invalid {
+    background-color: #f9c1b8;
+}
+
+/*This styling rule applies to the input boxes with the required attribute.
+Whenever the input box contains valid input, according to the pattern
+specified on the input box element, the background color of the input box
+is highlighted a light green.*/
+input:valid {
+    background-color: #8cf394;
+}
+
+#noMatch {
+    font-size: medium;
+    font-weight: bold;
+    font-style: oblique;
+    color: red;
+    font-family: Courier, Helvetica, Verdana, sans-serif;
+}
+
+/*A simple class which is used to align the text of an element with this class
+to the center.*/
+.centerText {
+    text-align: center;
+}

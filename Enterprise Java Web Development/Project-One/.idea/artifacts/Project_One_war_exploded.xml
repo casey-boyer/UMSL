@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Project-One:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Project_One_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Project-One" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Project-One/web/Web" />
+      <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
+      <element id="library" level="project" name="Maven: javax.el:javax.el-api:3.0.0" />
+      <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+      <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
+      <element id="library" level="project" name="Maven: junit:junit:4.11" />
+      <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.2" />
+      <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+      <element id="directory" name="css">
+        <element id="dir-copy" path="$PROJECT_DIR$/web/WEB-INF/css" />
+      </element>
+      <element id="directory" name="javascript">
+        <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/javascript/formValidate.js" />
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Documents/UMSL/Fall 2018/CS4012 Enterprise Java Web Development/Project1/Project-One/target/project-one-1.0.0.SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.46" />
+      <element id="library" level="project" name="mysql-connector-java-8.0.12" />
+    </root>
+  </artifact>
+</component>

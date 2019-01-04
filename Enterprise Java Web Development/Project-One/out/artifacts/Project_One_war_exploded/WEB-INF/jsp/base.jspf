@@ -1,0 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="edu.umsl.model.Student" %>
+<%@ page import="edu.umsl.model.Course" %>
+<%@ page isELIgnored="false" %>

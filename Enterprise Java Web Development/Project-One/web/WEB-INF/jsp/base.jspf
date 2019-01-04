@@ -1,0 +1,6 @@
+<%---In every .jsp file, include the JSTL core library, the Student and Course java objects,
+and set isElIgnored to false so EL may be used.---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="edu.umsl.model.Student" %>
+<%@ page import="edu.umsl.model.Course" %>
+<%@ page isELIgnored="false" %>

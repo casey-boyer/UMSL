@@ -1,0 +1,26 @@
+CREATE TABLE STUDENT (
+    s_key INT NOT NULL AUTO_INCREMENT,
+    student_id INT UNIQUE NOT NULL,
+    firstname  VARCHAR(100) NOT NULL,
+    lastname VARCHAR(100) NOT NULL,
+    PRIMARY KEY(s_key)
+);
+
+CREATE TABLE COURSE (
+    course_id INT NOT NULL AUTO_INCREMENT,
+    coursename VARCHAR(100) NOT NULL,
+    coursenumber INT NOT NULL,
+    coursedays VARCHAR(45) NOT NULL,
+    coursetimes VARCHAR(20) NOT NULL,
+    s_id INT,
+    PRIMARY KEY(course_id),
+    FOREIGN KEY(s_id) REFERENCES student(student_id)
+);
+
+CREATE TABLE SCHEDULE (
+    schedule_id INT NOT NULL AUTO_INCREMENT,
+    schedulename VARCHAR(100) NOT NULL,
+    s_id INT,
+    PRIMARY KEY(schedule_id),
+    FOREIGN KEY(s_id) REFERENCES STUDENT(student_id)
+);

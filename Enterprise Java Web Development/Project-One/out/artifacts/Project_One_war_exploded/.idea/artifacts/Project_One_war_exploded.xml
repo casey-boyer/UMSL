@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Project-One:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Project_One_war_exploded</output-path>
+    <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$" />
+    </root>
+  </artifact>
+</component>
